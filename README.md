@@ -75,7 +75,52 @@ After these steps, your VM will be set up with IIS, PHP, and MySQL, ready to ins
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1. Register PHP in IIS:
+Open IIS as Administrator.
+
+Register PHP:
+Open PHP Manager in IIS.
+Register PHP by selecting C:\PHP\php-cgi.exe.Reload IIS:
+
+Open IIS Manager.
+Stop and Start the server to apply changes.
+
+2. Install osTicket v1.15.8:
+Extract osTicket Files:
+
+From the osTicket-Installation-Files folder, unzip osTicket-v1.15.8.zip.
+Copy the upload folder into C:\inetpub\wwwroot.
+Rename upload to osTicket.
+Reload IIS:
+
+Stop and start the IIS server again to apply changes.
+
+3. Access osTicket:
+Go to Sites > Default > osTicket in IIS.
+Click *Browse :80 to open the osTicket site in your browser.
+
+4. Enable Required PHP Extensions:
+In IIS, go to Sites > Default > osTicket.
+Double-click PHP Manager.
+Click Enable or disable an extension.
+Enable the following PHP extensions:
+php_imap.dll
+php_intl.dll
+php_opcache.dll
+Refresh the osTicket site in the browser to see the changes.
+
+5. Configure osTicket:
+Rename ost-sampleconfig.php:
+
+Go to C:\inetpub\wwwroot\osTicket\include.
+Rename ost-sampleconfig.php to ost-config.php.
+Assign Permissions to ost-config.php:
+
+Right-click ost-config.php, go to Properties > Security.
+Disable inheritance and Remove all permissions.
+Add Everyone and give Full Control.
+
+This sets up osTicket, ensures required extensions are enabled, and configures permissions for the ost-config.php file.
 </p>
 <br />
 
