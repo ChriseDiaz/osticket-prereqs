@@ -77,7 +77,9 @@ After these steps, your VM will be set up with IIS, PHP, and MySQL, ready to ins
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+ ![Image](https://github.com/user-attachments/assets/a6cb4e2f-ae70-46b6-b3fc-440dba6d5af3)
+
 </p>
 <p>
 1. Register PHP in IIS:
