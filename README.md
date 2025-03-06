@@ -132,7 +132,9 @@ This sets up osTicket, ensures required extensions are enabled, and configures p
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ 
+![Image](https://github.com/user-attachments/assets/3832d088-91a8-482c-9a76-2cd38d24be7a)
+
 </p>
 <p>
 1. Continue osTicket Setup in the Browser:
