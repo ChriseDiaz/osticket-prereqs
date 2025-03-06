@@ -36,8 +36,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
  1. Create Azure Virtual Machine:
 Name: osticket-vm
+ 
 Username: labuser
+
 Password: osTicketPassword1!
+
 Size: 4 vCPUs (Windows 10 Pro)
 
 2. Log into VM via Remote Desktop:Use the provided username and password to connect to the VM.
