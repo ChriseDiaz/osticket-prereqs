@@ -128,6 +128,41 @@ This sets up osTicket, ensures required extensions are enabled, and configures p
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1. Continue osTicket Setup in the Browser:
+Click Continue to proceed.
+Helpdesk Name: Enter a name for your helpdesk.
+Default Email: Set the email address that will receive customer emails.
+
+ 2. Install HeidiSQL (Database Management):
+From the osTicket-Installation-Files folder, install HeidiSQL.
+Open HeidiSQL, create a new session with:
+
+Username: root
+
+Password: root
+
+Connect to the MySQL session.
+
+3. Create Database in HeidiSQL:
+In HeidiSQL, create a new database called osTicket.
+
+4. Complete osTicket Installation in Browser:
+In the osTicket web installer:
+MySQL Database: osTicket
+
+MySQL Username: root
+
+MySQL Password: root
+
+Click Install Now! to complete the installation.
+
+6. Final Setup:
+Once installation is successful, browse to the Help Desk Login Page:
+http://localhost/osTicket/scp/login.php
+
+End Users osTicket URL:
+http://localhost/osTicket/
+
+This completes the installation and setup of osTicket on your VM.
 </p>
 <br />
